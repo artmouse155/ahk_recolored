@@ -52,19 +52,19 @@ FLAGS
 The program will output a folder in its own directory with 12 files: a `.png`, `svg`, and `.ico` for each of the four possible AutoHotkey v2.0 [tray icons](https://www.autohotkey.com/docs/v2/Program.htm#tray-icon). The files will be of the same resolution specified by the `-r` flag, or if no flag is provided, the resolution will be 256x256.
 
 ```txt
-📁ahk_<colorName>
-├── 📄ahk_<colorName>_<resolution>_pause_suspend.ico
-├── 📄ahk_<colorName>_<resolution>_pause_suspend.png
-├── 📄ahk_<colorName>_<resolution>_pause_suspend.svg
-├── 📄ahk_<colorName>_<resolution>_pause.ico
-├── 📄ahk_<colorName>_<resolution>_pause.png
-├── 📄ahk_<colorName>_<resolution>_pause.svg
-├── 📄ahk_<colorName>_<resolution>_suspend.ico
-├── 📄ahk_<colorName>_<resolution>_suspend.png
-├── 📄ahk_<colorName>_<resolution>_suspend.svg
-├── 📄ahk_<colorName>_<resolution>.ico
-├── 📄ahk_<colorName>_<resolution>.png
-└── 📄ahk_<colorName>_<resolution>.svg
+📁ahk_<COLOR_NAME>
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_pause_suspend.ico
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_pause_suspend.png
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_pause_suspend.svg
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_pause.ico
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_pause.png
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_pause.svg
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_suspend.ico
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_suspend.png
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>_suspend.svg
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>.ico
+├── 📄ahk_<COLOR_NAME>_<RESOLUTION>.png
+└── 📄ahk_<COLOR_NAME>_<RESOLUTION>.svg
 ```
 
 ### Usage in a `.ahk` script
