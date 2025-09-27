@@ -1,8 +1,32 @@
-# INPUT: backgroundColor, letterColor, colorName, resolution
-# OUTPUT: Zip file AHK_<colorName>
+# AHK Recolor Script
 
-inkscape="C:\Program Files\Inkscape\bin\inkscape.com"
-template="template.xml"
+# SYNTAX
+#   ./ahkrecolor.sh -b <PRIMARY_COLOR> -l <SECONDARY_COLOR> -c <COLOR_NAME> -r <RESOLUTION>
+#   Please note: Omit '#' when inputting hex codes.
+
+# FLAGS
+#   Required:
+#   -b              Set the hex code for the background, or primary color
+#                   Omit '#' when inputting hex code
+
+#   Optional:
+#   -l              Set the hex code for the letter, or secondary color
+#                   Omit '#' when inputting hex code
+#                   default=ffffff
+
+#   -c              Set the color name
+#                   default=<PRIMARY_COLOR>_<SECONDARY_COLOR>
+
+#   -r              Set the resolution of the image in pixels
+#                   Standard tray icon size is 24*24
+#                   default=256
+
+
+INKSCAPE="C:\Program Files\Inkscape\bin\inkscape.com"
+PYTHON=python
+
+
+TEMPLATE="template.xml"
 
 resolution=256
 
@@ -34,15 +58,10 @@ prefix="ahk_$colorName"
 
 mkdir $prefix
 
-
-# MYVAR=ho02123ware38384you443d34o3434ingtod38384day
-# MYVAR=$(echo "$MYVAR" | sed -e 's/[a-zA-Z]/X/g' -e 's/[0-9]/N/g')
-# echo "$MYVAR"
-
 # 1. Create .svg files
 
 # Create template
-sed -e "s/BG_FILL/#$backgroundColor/" -e "s/LETTER_FILL/#$letterColor/" -e "s/RESOLUTION/$resolution/" $template > "$prefix/${prefix}_$resolution.xml"
+sed -e "s/BG_FILL/#$backgroundColor/" -e "s/LETTER_FILL/#$letterColor/" -e "s/RESOLUTION/$resolution/" $TEMPLATE > "$prefix/${prefix}_$resolution.xml"
 
 cd $prefix
 
@@ -88,24 +107,24 @@ rm "${prefix}_$resolution.xml"
 
 # 2. Create .png files
 
-"$inkscape" "$reg.svg" --export-type=png
+"$INKSCAPE" "$reg.svg" --export-type=png
 printf "created $reg.png\n"
-"$inkscape" "$pause.svg" --export-type=png
+"$INKSCAPE" "$pause.svg" --export-type=png
 printf "created $pause.png\n"
-"$inkscape" "$pauseSuspend.svg" --export-type=png
+"$INKSCAPE" "$pauseSuspend.svg" --export-type=png
 printf "created $pauseSuspend.png\n"
-"$inkscape" "$suspend.svg" --export-type=png
+"$INKSCAPE" "$suspend.svg" --export-type=png
 printf "created $suspend.png\n"
 
 
 # 3. Create .ico files
-python -c "from PIL import Image; logo = Image.open(\"$reg.png\"); logo.save(\"$reg.ico\", format=\"ico\")"
+"$PYTHON" -c "from PIL import Image; logo = Image.open(\"$reg.png\"); logo.save(\"$reg.ico\", format=\"ico\")"
 printf "created $reg.ico\n"
-python -c "from PIL import Image; logo = Image.open(\"$pause.png\"); logo.save(\"$pause.ico\", format=\"ico\")"
+"$PYTHON" -c "from PIL import Image; logo = Image.open(\"$pause.png\"); logo.save(\"$pause.ico\", format=\"ico\")"
 printf "created $pause.ico\n"
-python -c "from PIL import Image; logo = Image.open(\"$pauseSuspend.png\"); logo.save(\"$pauseSuspend.ico\", format=\"ico\")"
+"$PYTHON" -c "from PIL import Image; logo = Image.open(\"$pauseSuspend.png\"); logo.save(\"$pauseSuspend.ico\", format=\"ico\")"
 printf "created $pauseSuspend.ico\n"
-python -c "from PIL import Image; logo = Image.open(\"$suspend.png\"); logo.save(\"$suspend.ico\", format=\"ico\")"
+"$PYTHON" -c "from PIL import Image; logo = Image.open(\"$suspend.png\"); logo.save(\"$suspend.ico\", format=\"ico\")"
 printf "created $suspend.ico\n"
 
 printf "done\n"
