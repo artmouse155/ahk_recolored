@@ -77,6 +77,8 @@ Here are a list of some icons I have created with this program. They are include
 
 ### Color Icons
 
+These icons were generated using [`generate_palettes.sh`](/generate_palettes.sh). To generate your own custom sizes, change the `resolution` parameter at the top of the file.
+
 | Name      | Primary Color | Secondary Color | Regular Icon                                                 |
 |-----------|---------------|-----------------|--------------------------------------------------------------|
 | Red       | `#B22222`     | `#FF6B6B`       | ![Red](icons/color/ahk_red/ahk_red_24.png)                   |
@@ -96,6 +98,8 @@ Here are a list of some icons I have created with this program. They are include
 
 ### Bold Icons
 
+These icons were generated using [`generate_bold_palettes.sh`](/generate_bold_palettes.sh). To generate your own custom sizes, change the `resolution` parameter at the top of the file.
+
 | Name           | Primary Color | Secondary Color | Regular Icon                                                                     |
 |----------------|---------------|-----------------|----------------------------------------------------------------------------------|
 | Bold Red       | `#FF0000`     | `#00FFFF`       | ![Bold Red](icons/color-bold/ahk_bold_red/ahk_bold_red_24.png)                   |
@@ -114,6 +118,8 @@ Here are a list of some icons I have created with this program. They are include
 | Bold Black     | `#000000`     | `#FFFFFF`       | ![Bold Black](icons/color-bold/ahk_bold_black/ahk_bold_black_24.png)             |
 
 ### Fun Icons
+
+These icons were generated using [`generate_fun_palettes.sh`](/generate_fun_palettes.sh). To generate your own custom sizes, change the `resolution` parameter at the top of the file.
 
 | Name                                                                         | Primary Color | Secondary Color | Regular Icon                                                                                |
 |------------------------------------------------------------------------------|---------------|-----------------|---------------------------------------------------------------------------------------------|
