@@ -127,5 +127,5 @@ Here are a list of some icons I have created with this program. They are include
 ## Acknowledgements
 
 - Default icon SVG data from the AutoHotkey [GitHub](https://github.com/AutoHotkey/AutoHotkey).
-- I want to thank <http://www.folcolor.com/> for the idea for which colors to put into a palette.
+- I want to thank Kevin Weatherman, creator of [Folcolor](http://www.folcolor.com/), for the idea for which colors to put into a palette.
 - I used ChatGPT to generate the palettes only; all other code is authored by me.
