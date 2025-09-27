@@ -79,20 +79,20 @@ Here are a list of some icons I have created with this program. They are include
 
 | Name      | Primary Color | Secondary Color | Regular Icon                                                 |
 |-----------|---------------|-----------------|--------------------------------------------------------------|
-| Red       | `#FF0000`     | `#00FFFF`       | ![Red](icons/color/ahk_red/ahk_red_24.png)                   |
-| Pink      | `#FF007F`     | `#00FFBF`       | ![Pink](icons/color/ahk_pink/ahk_pink_24.png)                |
-| Purple    | `#8000FF`     | `#FFFF00`       | ![Purple](icons/color/ahk_purple/ahk_purple_24.png)          |
-| Blue      | `#0040FF`     | `#FFD700`       | ![Blue](icons/color/ahk_blue/ahk_blue_24.png)                |
-| Cyan      | `#00FFFF`     | `#FF1493`       | ![Cyan](icons/color/ahk_cyan/ahk_cyan_24.png)                |
-| Teal      | `#00FFBF`     | `#8B00FF`       | ![Teal](icons/color/ahk_teal/ahk_teal_24.png)                |
-| Green     | `#00FF00`     | `#FF00FF`       | ![Green](icons/color/ahk_green/ahk_green_24.png)             |
-| Lime      | `#ADFF2F`     | `#8B0000`       | ![Lime](icons/color/ahk_lime/ahk_lime_24.png)                |
-| Yellow    | `#FFFF00`     | `#00008B`       | ![Yellow](icons/color/ahk_yellow/ahk_yellow_24.png)          |
-| Orange    | `#FF7F00`     | `#0040FF`       | ![Orange](icons/color/ahk_orange/ahk_orange_24.png)          |
-| Brown     | `#8B4513`     | `#00FFEE`       | ![Brown](icons/color/ahk_brown/ahk_brown_24.png)             |
-| Grey      | `#808080`     | `#FFFFFF`       | ![Grey](icons/color/ahk_grey/ahk_grey_24.png)                |
-| Blue Grey | `#607D8B`     | `#FFEE58`       | ![Blue Grey](icons/color/ahk_blue_grey/ahk_blue_grey_24.png) |
-| Black     | `#000000`     | `#FFFFFF`       | ![Black](icons/color/ahk_black/ahk_black_24.png)             |
+| Red       | `#B22222`     | `#FF6B6B`       | ![Red](icons/color/ahk_red/ahk_red_24.png)                   |
+| Pink      | `#D63384`     | `#FF85C1`       | ![Pink](icons/color/ahk_pink/ahk_pink_24.png)                |
+| Purple    | `#6F42C1`     | `#B899FF`       | ![Purple](icons/color/ahk_purple/ahk_purple_24.png)          |
+| Blue      | `#1E40AF`     | `#669CFF`       | ![Blue](icons/color/ahk_blue/ahk_blue_24.png)                |
+| Cyan      | `#0891B2`     | `#5DD4FF`       | ![Cyan](icons/color/ahk_cyan/ahk_cyan_24.png)                |
+| Teal      | `#0D9488`     | `#6EF2E3`       | ![Teal](icons/color/ahk_teal/ahk_teal_24.png)                |
+| Green     | `#448E3A`     | `#8CF287`       | ![Green](icons/color/ahk_green/ahk_green_24.png)             |
+| Lime      | `#84CC16`     | `#D4FF73`       | ![Lime](icons/color/ahk_lime/ahk_lime_24.png)                |
+| Yellow    | `#EAB308`     | `#FFE766`       | ![Yellow](icons/color/ahk_yellow/ahk_yellow_24.png)          |
+| Orange    | `#EA580C`     | `#FF9B6E`       | ![Orange](icons/color/ahk_orange/ahk_orange_24.png)          |
+| Brown     | `#7C3F00`     | `#D49F73`       | ![Brown](icons/color/ahk_brown/ahk_brown_24.png)             |
+| Grey      | `#6B7280`     | `#D1D5DB`       | ![Grey](icons/color/ahk_grey/ahk_grey_24.png)                |
+| Blue Grey | `#475569`     | `#9CA3AF`       | ![Blue Grey](icons/color/ahk_blue_grey/ahk_blue_grey_24.png) |
+| Black     | `#000000`     | `#A3A3A3`       | ![Black](icons/color/ahk_black/ahk_black_24.png)             |
 
 ### Bold Icons
 
